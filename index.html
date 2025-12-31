@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fish & Fortune 🎣</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎣 Fish & Fortune</h1>
+    <p>Your quest for aquatic riches begins!</p>
+  </header>
+
+  <main id="game-container">
+    <section id="game-area" aria-label="Fishing Game Canvas">
+      <canvas id="game-canvas" width="800" height="400" role="img" aria-label="Fishing game area"></canvas>
+    </section>
+
+    <section id="controls" aria-label="Game Controls">
+      <button id="cast-button" aria-label="Cast your fishing line">🎯 Cast Line</button>
+      <button id="sell-button" aria-label="Sell your caught fish">💰 Sell Fish</button>
+    </section>
+
+    <aside id="inventory" aria-label="Player Inventory">
+      <h2>🎒 Inventory</h2>
+      <ul id="fish-list" aria-live="polite"></ul>
+      <p>Total Money: $<span id="money">0</span></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>🐟 Good luck, angler! May the fish be ever in your favor.</p>
+  </footer>
+
+  <script src="fish-data.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
